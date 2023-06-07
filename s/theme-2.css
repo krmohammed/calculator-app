@@ -1,0 +1,54 @@
+.theme2.container {
+    background-color: hsl(0, 0%, 90%);
+}
+
+.theme2 nav {
+    color: hsl(60, 10%, 19%);
+}
+
+div.theme-two.toggle-container {
+    background-color: hsl(0, 5%, 81%);
+}
+
+.theme-two .theme-1,
+.theme-two .theme-3 {
+    background-color: hsl(0, 5%, 81%);
+}
+
+.theme-two .theme-2 {
+    background-color: hsl(25, 98%, 40%);
+}
+
+.theme2 .screen {
+    background-color: hsl(0, 0%, 93%);
+    color: hsl(60, 10%, 19%);
+}
+
+.theme2 .numbs {
+    background-color: hsl(0, 5%, 81%);
+}
+
+.theme2 .numbs div {
+    background-color: hsl(45, 7%, 89%);
+    color: hsl(60, 10%, 19%);
+    box-shadow: 0 3px 0 0 hsl(35, 11%, 61%);
+}
+
+.theme2 .numbs div.del {
+    color: hsl(0, 0%, 100%);
+    background-color: hsl(185, 42%, 37%);
+    box-shadow: 0 3px 0 0 hsl(185, 58%, 25%);
+}
+
+.theme2 .numbs div.reset {
+    background-color: hsl(185, 42%, 37%);
+    color: hsl(0, 0%, 100%);
+    box-shadow: 0 3px 0 0 hsl(185, 58%, 25%);
+}
+
+
+.theme2 .numbs div.evaluate {
+    background-color: hsl(25, 98%, 40%);
+    color: hsl(0, 0%, 100%);
+    box-shadow: 0 3px 0 0 hsl(25, 99%, 27%);
+}

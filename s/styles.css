@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'League Spartan', sans-serif;
+}
+
+.container {
+    @apply flex flex-col gap-4 justify-center items-center h-screen w-screen;
+    background-color: hsl(222, 26%, 31%);
+}
+
+div.toggle-nums {
+    /* width: 65px; */
+    @apply flex items-center justify-end text-xs;
+    gap: 18px;
+    padding-right: 5px;
+}
+
+.theme-1, .theme-2, .theme-3 {
+    cursor: pointer;
+}
+
+.theme-1 {
+    background-color: hsl(25, 98%, 40%);
+}
+
+.toggle-nums div {
+    cursor: pointer;
+}
+
+.toggle-balls {
+    @apply h-4 w-4 rounded-full;
+}
+
+div.toggle-container {
+    @apply h-5 flex justify-between items-center rounded-2xl;
+    padding-left: 3px;
+    padding-right: 3px;
+    width: 65px;
+    background-color: hsl(223, 31%, 20%);
+}
+
+nav {
+    @apply flex flex-col text-white justify-center h-10;
+    width: 330px;
+}
+
+.screen {
+    width: 330px;
+    background-color: hsl(224, 36%, 15%);
+    color: hsl(0, 0%, 100%);
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 0 10px 0 0;
+    font-size: 35px;
+}
+
+.numbs {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    height: 320px;
+    gap: 10px;
+    grid: center;
+    padding: 20px 15px 10px 15px;
+    width: 330px;
+    background-color: hsl(223, 31%, 20%);
+}
+
+.numbs div {
+    height: 35px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(30, 25%, 89%);
+    color: hsl(221, 14%, 31%);
+    font-weight: 700;
+    text-transform: uppercase;
+    cursor: pointer;
+    box-shadow: 0 3px 0 0 hsl(28, 16%, 65%);
+}
+
+div.reset {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    background-color: hsl(225, 21%, 49%);
+    color: hsl(0, 0%, 100%);
+    box-shadow: 0 3px 0 0 hsl(224, 28%, 35%);
+}
+
+div.del {
+    color: hsl(0, 0%, 100%);
+    background-color: hsl(225, 21%, 49%);
+    box-shadow: 0 3px 0 0 hsl(224, 28%, 35%);
+}
+
+div.evaluate {
+    grid-column-start: 3;
+    grid-column-end: 5;
+    background-color: hsl(6, 63%, 50%);
+    color: hsl(0, 0%, 100%);
+    box-shadow: 0 3px 0 0 hsl(6, 70%, 34%);
+}
+
+.theme-2, .theme-3 {
+    background-color: hsl(223, 31%, 20%);
+}
